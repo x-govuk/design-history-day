@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="546" viewBox="420 482 584 546">
+  <g stroke="#202a32" stroke-linejoin="round">
+    <path d="M432 855v-29l130-238 129-92 300 158v176l-258 184Z"
+      fill="#ffeb3b" stroke-width="11"/>
+    <path d="m733 1014 129-268 129-92v176Z" fill="#202a32" stroke-width="6"/>
+    <path d="m562 588 300 158M432 826l314 165" fill="none" stroke-width="6"/>
+    <g fill="#202a32" stroke-width="6">
+      <path d="M640 552h122v29a61 37 0 0 1-122 0Z"/>
+      <path d="M790 630h122v29a61 37 0 0 1-122 0Z"/>
+    </g>
+    <g fill="#ffeb3b" stroke-width="6">
+      <ellipse cx="701" cy="552" rx="61" ry="37"/>
+      <ellipse cx="851" cy="630" rx="61" ry="37"/>
+      <circle cx="587" cy="698" r="36"/>
+      <circle cx="538" cy="790" r="36"/>
+    </g>
+  </g>
+  <circle cx="587" cy="698" r="21" fill="#202a32"/>
+  <g fill="#202a32" font-family="system-ui, sans-serif" font-size="52" font-weight="550">
+    <text x="631" y="741" transform="rotate(28 631 741)">Open</text>
+    <text x="586" y="830" transform="rotate(28 586 830)">Closed</text>
+  </g>
+</svg>

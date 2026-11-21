@@ -1,0 +1,238 @@
+:root {
+  --yellow: #ffeb3b;
+  --ink: #202a32;
+  color: var(--ink);
+  background: var(--yellow);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: clamp(0.75rem, 3vw, 2rem);
+}
+
+main,
+.site-footer {
+  max-inline-size: 42rem;
+  margin-inline: auto;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  border-block-start: 2px solid currentColor;
+  padding-block: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-project img {
+  flex: none;
+}
+
+.site-footer .footer-copyright {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+.poster {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  padding-block-start: clamp(1.5rem, 5vw, 4rem);
+}
+
+.poster-title {
+  container-type: inline-size;
+}
+
+h1 {
+  margin: 0;
+}
+
+.poster-title-text {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.poster-lettering,
+.poster-last-lines {
+  display: grid;
+  gap: 3cqi;
+}
+
+.poster-lettering img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.poster-lettering .poster-design {
+  inline-size: 86.6%;
+}
+
+.poster-lettering .poster-day {
+  inline-size: 44.4%;
+}
+
+.poster-lettering .poster-year {
+  inline-size: 56.2%;
+}
+
+@media (forced-colors: active) {
+  .poster-title-text {
+    position: static;
+    clip-path: none;
+    white-space: normal;
+  }
+
+  .poster-lettering {
+    display: none;
+  }
+}
+
+.poster-date {
+  margin: 1.25rem 0 0;
+  font-size: clamp(1rem, 4.5cqi, 1.5rem);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.poster-brick {
+  display: block;
+  inline-size: min(100%, 30rem);
+  block-size: auto;
+  justify-self: center;
+  align-self: center;
+}
+
+.content {
+  --content-text-size: clamp(1rem, 2vw, 1.25rem);
+  margin-block: clamp(2rem, 6vw, 4.5rem);
+  padding-block-end: 1.25rem;
+}
+
+.content > hr {
+  margin-block: 1.25rem;
+  border: 0;
+  border-block-start: 2px solid var(--ink);
+}
+
+.content > h2 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.15;
+}
+
+.content > * + h2 {
+  margin-block-start: 1.25rem;
+}
+
+.content p,
+.content > ul {
+  margin: 0;
+  font-size: var(--content-text-size);
+  line-height: 1.55;
+}
+
+.content p + p {
+  margin-block-start: 0.75em;
+}
+
+.content > ul {
+  margin-block-start: 0.75rem;
+  padding-inline-start: 0;
+}
+
+.content > ul > li::marker {
+  color: transparent;
+}
+
+.content > ul > li + li {
+  margin-block-start: 0.5lh;
+}
+
+.content > ul > li:has(> a:first-child) {
+  font-size: 0.875em;
+  line-height: 1.35;
+}
+
+.content > ul > li > a:first-child {
+  display: block;
+  inline-size: fit-content;
+  font-size: var(--content-text-size);
+  line-height: 1.55;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.15em;
+}
+
+a:focus-visible {
+  color: var(--yellow);
+  background-color: var(--ink);
+  outline: 2px solid var(--ink);
+  text-decoration-line: none;
+}
+
+@media (width < 46rem) {
+  .poster {
+    grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+    gap: clamp(0.75rem, 3vw, 1.5rem);
+    align-items: center;
+  }
+
+  .poster-last-lines {
+    grid-template-columns: minmax(0, 700fr) minmax(0, 885fr);
+    align-items: end;
+    column-gap: 5cqi;
+  }
+
+  .poster-lettering .poster-day,
+  .poster-lettering .poster-year {
+    inline-size: 100%;
+  }
+
+  .poster-date {
+    margin-block-start: 0.75rem;
+  }
+
+  .poster-brick {
+    inline-size: min(100%, 14rem);
+    justify-self: end;
+  }
+}
+
+@media (min-width: 46rem) {
+  .poster {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  }
+}
