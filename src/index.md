@@ -4,27 +4,27 @@ layout: page.html
 
 Design History Day celebrates [design histories](https://govuk-design-history.x-govuk.org/introduction/) and encourages more people to write them.
 
-It’s held on the last Friday before the Christmas break, as a chance to reflect on and document the work you’ve done in recent months.
+It’s held on the last Friday before the Christmas break: a chance to reflect on and document the work you’ve done in recent months.
 
 ---
 
 ## Get involved
 
-Read a design history, share one you love, or start writing your own.
+If you haven’t set up a design history site yet, use the [design history template](https://govuk-design-history.x-govuk.org) to get started.
 
-If you haven’t set up a design history site yet, use the [GOV.UK design history template](https://govuk-design-history.x-govuk.org) to get started.
+Write about some recent design work. A short post about one design decision is often best. Include what you learned from user research and anything you’d like your team to remember.
 
-Write a post about some of your recent design work. It doesn’t have to cover everything. A short post about one design decision is often best. Include what you learned from user research and anything that you’d like your team to remember in future.
+Publish your post on Friday 18 December, or the day before if you don’t work on Fridays.
 
-Publish your post on Friday 18 December. (If you don’t work on Fridays, then the day before is fine too.)
-
-Anyone who contributes a post gets a free sticker.
+Anyone who contributes a post gets a free sticker, posted in time for Christmas.
 
 ---
 
 ## Posts from the day
 
-We'll add links here as design histories are published on 18 December. In the meantime, here is a selection from 2025:
+We'll add links here as design histories are published on 18 December.
+
+For now, here is a selection from 2025:
 
 - [What we learnt from visiting London pharmacies](https://design-history.prevention-services.nhs.uk/record-a-vaccination/2025/12/london-pharmacy-research/)
   NHS Record a vaccination
